@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} $antialiased`}
       >
         <nav className="flex justify-between bg-gradient-to-br from-violet-600 to-amber-500 p-2"> 
-        <div className={gravitas_One.className}><span className={momo_signature.className}>Portfollio de </span>MOREIRA Stéphane</div>
+        <div className={gravitas_One.className}><span className={momo_signature.className}>Portfolio de </span>MOREIRA Stéphane</div>
         <div>
             <ul className="flex justify-between">
               <li className="px-2">Acceuil</li>
