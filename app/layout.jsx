@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono, Gravitas_One , Momo_Signature } from "next/font/google";
 import "./globals.css";
-
+import Header from "@/components/Header";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,17 +31,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} $antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="flex justify-between bg-gradient-to-br from-violet-600 to-amber-500 p-2"> 
-        <div className={gravitas_One.className}><span className={momo_signature.className}>Portfolio de </span>MOREIRA Stéphane</div>
-        <div>
-            <ul className="flex justify-between">
-              <li className="px-2">Acceuil</li>
-              <li className="px-2">Contact</li>
-            </ul>
-        </div>
-      </nav>
+        <Header/>
         {children}
       </body>
     </html>
