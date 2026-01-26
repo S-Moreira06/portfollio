@@ -29,8 +29,8 @@ export default function Hero() {
                         <button className="border-2 border-blue-300 text-blue-100 hover:bg-blue-500/10 px-8 py-3 rounded-lg font-semibold transition">Lire le Blog</button>
                     </div>
                     <div className="flex gap-4">
-                        <p className="text-blue-200 hover:text-white transition">Linkedin →</p>
-                        <p className="text-blue-200 hover:text-white transition">GitHub →</p>
+                        <a href="https://www.linkedin.com/in/s-moreira/" className="text-blue-200 hover:text-white transition">Linkedin →</a>
+                        <a href="https://github.com/S-Moreira06" className="text-blue-200 hover:text-white transition">GitHub →</a>
                     </div>
                 </div>
                 {/* Image / Droite */}

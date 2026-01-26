@@ -22,8 +22,15 @@ const momo_signature = Momo_Signature({
 })
 
 export const metadata = {
-  title: "MOREIRA S. - Web Dev / Community Manager",
-  description: "Portfollio",
+  title: "Steph-M",
+  description: "Développeur Full Stack",
+  keywords: ['Next.js', 'React', 'Portfolio'],
+  authors: [{ name: 'Steph M.' }],
+  openGraph: {
+    title: 'Steph M - Portfolio',
+    description: 'Découvrez mes projets',
+    images: ['/hero.png'],
+  }
 };
 
 

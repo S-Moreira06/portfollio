@@ -1,4 +1,8 @@
 import { Joti_One } from "next/font/google";
+import Image from "next/image";
+import ImgLili from '../public/lapetitelili.svg';
+
+
 const joti = Joti_One({
   weight: "400",
   subsets: ['latin'],
@@ -34,9 +38,11 @@ export default function Project () {
                             <p className="text-slate-600"><span className="font-semibold text-slate-900">✓ Parcours utilisateur complet</span></p>
                             <p className="text-slate-600"><span className="font-semibold text-slate-900">✓ Gestion des commandes et des stocks fonctionnelles</span></p>
                         </div>
-                        <button className="text-blue-600 font-semibold hover:text-blue-700 transition flex items-center gap-2">
-                            Voir le projet →
-                        </button>
+                        <a href="https://github.com/S-Moreira06/piwee-laravel" target="_blank">
+                            <button className="text-blue-600 font-semibold hover:text-blue-700 transition flex items-center gap-2">
+                                Voir le projet →
+                            </button>
+                        </a>
                     </div>
                 </div>
                 
@@ -60,12 +66,14 @@ export default function Project () {
                             <p className="text-slate-600"><span className="font-semibold text-slate-900">✓ Organisations et partage des taches</span></p>
                             <p className="text-slate-600"><span className="font-semibold text-slate-900">✓ Respect du CDC</span></p>
                         </div>
-                        <button className="text-cyan-600 font-semibold hover:text-cyan-700 transition flex items-center gap-2">
-                            Voir le projet →
-                        </button>
+                        <a href="https://github.com/laplateformeio/lili-cdpi-cannes-grp2">
+                            <button className="text-cyan-600 font-semibold hover:text-cyan-700 transition flex items-center gap-2">
+                                Voir le projet →
+                            </button>
+                        </a>
                     </div>
                     <div className="order-1 md:order-2 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-2xl h-80 flex items-center justify-center text-white text-2xl font-bold">
-                        📊 Analytics Dashboard
+                        <Image src={ImgLili} alt="La petite Lili" />
                     </div>
                 </div>
             </div>
