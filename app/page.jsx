@@ -2,6 +2,7 @@ import { Gravitas_One , Momo_Signature} from "next/font/google";
 import Stacks from "@/components/Stacks";
 import Hero from "@/components/Hero";
 import Project from "@/components/Project";
+import Expertise from "@/components/Expertise";
 
 const gravitas_One = Gravitas_One({
   weight: "400",
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <div>
       <Hero/>
+      <Expertise/>
       <Stacks/>
       <Project/>
     </div>

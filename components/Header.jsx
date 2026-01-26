@@ -17,16 +17,19 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
     return (
-        <nav className="flex justify-between bg-violet-600 p-2 sticky top-0"> 
-            <div className={`${gravitas_One.className} text-center whitespace-nowrap transition-all duration-1000 ${isScrolled ? 'flex-1' : 'flex-none'}`}>
-                DevFor<span className={`${momo_signature.className} `}>All</span>
+        <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200 flex justify-between items-center p-4"> 
+            <div className={`${gravitas_One.className} bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent text-xl`}>
+                💻 DevFor<span className={`${momo_signature.className} `}>All</span>
             </div>
-            <div className={`transition-all duration-300 overflow-hidden ${isScrolled ? 'w-0 opacity-0' : 'w-auto opacity-100'}`}>
-                <ul className="flex justify-between">
-                    <li className="px-2">Acceuil</li>
-                    <li className="px-2">Contact</li>
-                </ul>
+            <div className="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#hero" className="text-slate-600 hover:text-blue-600 transition">Accueil</a>
+                {/* <a href="#expertise" className="text-slate-600 hover:text-blue-600 transition">Expertise</a>
+                <a href="#portfolio" className="text-slate-600 hover:text-blue-600 transition">Portfolio</a> */}
+                <a href="#blog" className="text-slate-600 hover:text-blue-600 transition">Blog</a>
             </div>
+            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition font-medium">
+                Me Contacter
+            </button>
         </nav>
     )
 }
