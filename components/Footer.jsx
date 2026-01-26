@@ -32,7 +32,7 @@ export default function Footer () {
                     </div>
                     <div>
                         <h4 className="font-bold text-white mb-4">Stack</h4>
-                        <p className="text-sm">Next.js • React • Laravel • Tailwind CSS • shadcn/ui</p>
+                        <p className="text-sm">Next.js • Tailwind CSS</p>
                     </div>
                 </div>
                 <div className="border-t border-slate-800 pt-8 text-center text-sm">
