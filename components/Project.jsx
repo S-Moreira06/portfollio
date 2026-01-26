@@ -1,3 +1,8 @@
+import { Joti_One } from "next/font/google";
+const joti = Joti_One({
+  weight: "400",
+  subsets: ['latin'],
+})
 export default function Project () {
     return (
         <section id="portfolio" className="py-20 bg-white">
@@ -9,8 +14,8 @@ export default function Project () {
                 
                 {/* <!-- Projet 1 --> */}
                 <div className="mb-16 grid md:grid-cols-2 gap-12 items-center">
-                    <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl h-80 flex items-center justify-center text-white text-2xl font-bold">
-                        🛒 Piwee! - E-commerce
+                    <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl h-80 flex items-center justify-center text-white text-6xl font-bold">
+                        🛒 <span className={joti.className}>Piwee!</span>
                     </div>
                     <div>
                         <h3 className="text-3xl font-bold text-slate-900 mb-4">Piwee</h3>

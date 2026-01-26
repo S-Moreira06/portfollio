@@ -1,10 +1,10 @@
 export default function Expertise () {
     return (
-        <section id="expertise" class="section-gradient py-20">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-slate-900 mb-4">Mon Expertise</h2>
-                    <p class="text-lg text-slate-600">Spécialisé en Full-Stack avec focus sur Frontend moderne</p>
+        <section id="expertise" className="section-gradient py-20">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl font-bold text-slate-900 mb-4">Mon Expertise</h2>
+                    <p className="text-lg text-slate-600">Spécialisé en Full-Stack avec focus sur Frontend moderne</p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* <!-- Frontend --> */}
