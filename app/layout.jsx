@@ -26,11 +26,6 @@ export const metadata = {
   description: "Développeur Full Stack",
   keywords: ['Next.js', 'React', 'Portfolio'],
   authors: [{ name: 'Steph M.' }],
-  openGraph: {
-    title: 'Steph M - Portfolio',
-    description: 'Découvrez mes projets',
-    images: ['/hero.png'],
-  }
 };
 
 
