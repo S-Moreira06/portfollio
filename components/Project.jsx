@@ -66,7 +66,7 @@ export default function Project () {
                             <p className="text-slate-600"><span className="font-semibold text-slate-900">✓ Organisations et partage des taches</span></p>
                             <p className="text-slate-600"><span className="font-semibold text-slate-900">✓ Respect du CDC</span></p>
                         </div>
-                        <a href="https://github.com/laplateformeio/lili-cdpi-cannes-grp2">
+                        <a href="https://github.com/laplateformeio/lili-cdpi-cannes-grp2" target="_blank">
                             <button className="text-cyan-600 font-semibold hover:text-cyan-700 transition flex items-center gap-2">
                                 Voir le projet →
                             </button>
