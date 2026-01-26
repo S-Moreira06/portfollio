@@ -3,6 +3,8 @@ import Stacks from "@/components/Stacks";
 import Hero from "@/components/Hero";
 import Project from "@/components/Project";
 import Expertise from "@/components/Expertise";
+import HeroBlog from "@/components/HeroBlog";
+import CTA from "@/components/CTA";
 
 const gravitas_One = Gravitas_One({
   weight: "400",
@@ -19,8 +21,9 @@ export default function Home() {
     <div>
       <Hero/>
       <Expertise/>
-      <Stacks/>
       <Project/>
+      <HeroBlog/>
+      <CTA/>
     </div>
   );
 }
