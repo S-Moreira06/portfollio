@@ -22,11 +22,47 @@ const momo_signature = Momo_Signature({
 })
 
 export const metadata = {
-  title: "Steph-M",
-  description: "Développeur Full Stack",
-  keywords: ['Next.js', 'React', 'Portfolio'],
-  authors: [{ name: 'Steph M.' }],
+  title: "Steph-M | Développeur Full-Stack React & Node.js",
+  description: "Portfolio de Steph M., développeur full-stack spécialisé en React, Next.js, Laravel et Node.js. Découvrez mes projets et mon expertise.",
+  keywords: ['Développeur', 'Full-Stack', 'React', 'Next.js', 'Laravel', 'Node.js', 'Portfolio', 'Web', 'JavaScript'],
+  authors: [{ name: 'Steph M.', url: 'https://steph-m.dev' }],
+  
+  // Open Graph
+  openGraph: {
+    title: "Steph-M | Développeur Full-Stack",
+    description: "Portfolio de Steph M., développeur full-stack spécialisé en React, Next.js, Laravel et Node.js.",
+    url: "https://steph-m.dev",
+    type: "website",
+    locale: "fr_FR",
+    images: [
+      {
+        url: "https://steph-m.dev/og-image.png", // À créer (ou utiliser une image existante)
+        width: 1200,
+        height: 630,
+        alt: "Steph-M Portfolio",
+      },
+    ],
+  },
+  
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    title: "Steph-M | Développeur Full-Stack",
+    description: "Portfolio de Steph M., développeur full-stack spécialisé en React, Next.js, Laravel et Node.js.",
+    images: ["https://steph-m.dev/og-image.png"], // Même image
+    creator: "@steph_dev", // À remplacer par ton vrai handle Twitter
+  },
+  
+  // Canonical URL
+  canonical: "https://steph-m.dev",
+  
+  // Icône du site
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
+
 
 
 
