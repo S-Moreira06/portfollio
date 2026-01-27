@@ -1,6 +1,7 @@
 import { Gravitas_One , Momo_Signature} from "next/font/google";
 import Image from "next/image";
 import HeroImage from '../public/hero2.png';
+import Link from "next/link";
 const gravitas_One = Gravitas_One({
   weight: "400",
   subsets: ['latin'],
@@ -26,7 +27,7 @@ export default function Hero() {
                     </p>
                     <div className="flex gap-4">
                         <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105">Voir mon portfollio</button>
-                        <button className="border-2 border-blue-300 text-blue-100 hover:bg-blue-500/10 px-8 py-3 rounded-lg font-semibold transition">Lire le Blog</button>
+                        <Link href="/blog" className="border-2 border-blue-300 text-blue-100 hover:bg-blue-500/10 px-8 py-3 rounded-lg font-semibold transition">Lire le Blog</Link>
                     </div>
                     <div className="flex gap-4">
                         <a href="https://www.linkedin.com/in/s-moreira/" className="text-blue-200 hover:text-white transition">Linkedin →</a>

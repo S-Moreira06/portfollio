@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer () {
     return (
         <footer className="bg-slate-900 text-slate-300 py-12">
@@ -6,28 +8,27 @@ export default function Footer () {
                     <div>
                         <h4 className="font-bold text-white mb-4">Navigation</h4>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-white transition">Accueil</a></li>
-                            <li><a href="#" className="hover:text-white transition">Portfolio</a></li>
-                            <li><a href="#" className="hover:text-white transition">Blog</a></li>
-                            <li><a href="#" className="hover:text-white transition">Contact</a></li>
+                            <li><Link href="/" className="hover:text-white transition">Accueil</Link></li>
+                            <li><Link href="#/blog" className="hover:text-white transition">Blog</Link></li>
+                            <li><Link href="#" className="hover:text-white transition">Contact</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h4 className="font-bold text-white mb-4">Social</h4>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-white transition">LinkedIn</a></li>
-                            <li><a href="#" className="hover:text-white transition">GitHub</a></li>
-                            <li><a href="#" className="hover:text-white transition">Twitter</a></li>
-                            <li><a href="#" className="hover:text-white transition">Twitch</a></li>
+                            <li><Link href="https://www.linkedin.com/in/s-moreira/" target="_blank" className="hover:text-white transition">LinkedIn</Link></li>
+                            <li><Link href="https://github.com/S-Moreira06/" className="hover:text-white transition">GitHub</Link></li>
+                            {/* <li><Link href="#" className="hover:text-white transition">Twitter</Link></li>
+                            <li><Link href="#" className="hover:text-white transition">Twitch</Link></li> */}
                         </ul>
                     </div>
                     <div>
                         <h4 className="font-bold text-white mb-4">Resources</h4>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-white transition">CV</a></li>
-                            <li><a href="#" className="hover:text-white transition">Sitemap</a></li>
-                            <li><a href="#" className="hover:text-white transition">Privacy</a></li>
-                            <li><a href="#" className="hover:text-white transition">Terms</a></li>
+                            <li><Link href="#" className="hover:text-white transition">CV</Link></li>
+                            <li><Link href="#" className="hover:text-white transition">Sitemap</Link></li>
+                            <li><Link href="#" className="hover:text-white transition">Privacy</Link></li>
+                            <li><Link href="#" className="hover:text-white transition">Terms</Link></li>
                         </ul>
                     </div>
                     <div>
