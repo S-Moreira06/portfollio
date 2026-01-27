@@ -25,9 +25,9 @@ export default function BlogPage() {
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-16">
+      <section className="hero-gradient text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold my-4">Mon Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-10">Blog</h1>
           <p className="text-lg opacity-90 max-w-2xl">
             Articles sur le développement web, React, Next.js, et bien d'autres
             sujets passionnants.

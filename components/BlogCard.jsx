@@ -11,7 +11,7 @@ export default function BlogCard({ article }) {
   return (
     <article className="group bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-slate-700">
       {/* Image */}
-      <div className="relative w-full h-48 overflow-hidden bg-gray-100 dark:bg-slate-700">
+      <div className="relative w-full h-68 overflow-hidden bg-gray-100 dark:bg-slate-700">
         <Image
           src={article.image}
           alt={article.title}
@@ -21,7 +21,7 @@ export default function BlogCard({ article }) {
       </div>
 
       {/* Contenu */}
-      <div className="p-6">
+      <div className="px-6 py-3">
         {/* Category Badge */}
         <span className="inline-block px-3 py-1 mb-3 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/20 rounded-full">
           {article.category}
@@ -33,7 +33,7 @@ export default function BlogCard({ article }) {
         </h3>
 
         {/* Excerpt */}
-        <p className="mb-4 text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+        <p className="mb-2 text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
           {article.excerpt}
         </p>
 
@@ -44,11 +44,11 @@ export default function BlogCard({ article }) {
         </div>
 
         {/* Tags */}
-        <div className="mb-4 flex flex-wrap gap-1">
+        <div className="mb-2 flex flex-wrap gap-1">
           {article.tags.slice(0, 2).map((tag) => (
             <span
               key={tag}
-              className="px-2 py-1 text-xs bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 rounded"
+              className="px-2 py-1 text-xs bg-gray-100 dark:bg-slate-700 text-black dark:text-gray-900 rounded"
             >
               #{tag}
             </span>
