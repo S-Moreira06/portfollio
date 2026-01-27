@@ -10,14 +10,15 @@ export default function Expertise() {
   return (
     <section className="relative w-full min-h-screen overflow-hidden flex items-center justify-center py-20 px-5 bg-cream-50">
       {/* Animated Background */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-4/5 opacity-9 overflow-hidden z-10 flex items-center justify-center">
+      <div className="absolute top-30 left-1/3 transform -translate-x-1/2 -translate-y-1/2 w-11/12 h-4/5 opacity-9  z-10 flex items-center justify-center">
         <style>{`
-          @keyframes scroll-left {
+          @keyframes scroll-back-forth {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            50% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
           }
           .stack-carousel {
-            animation: scroll-left 60s linear infinite;
+            animation: scroll-back-forth 60s ease-in-out infinite;
           }
           .stack-carousel:hover {
             animation-play-state: paused;
@@ -51,19 +52,20 @@ export default function Expertise() {
             { name: "hono", label: "Hono" },
           ].map((tech, index) => (
             <div key={index} className="flex flex-col items-center gap-4 min-w-fit text-center text-xs text-slate-500">
-              <div className="w-60 h-60 flex items-center justify-center bg-teal-500 bg-opacity-5 rounded-2xl transition-all duration-550">
+              <div className="w-30 h-30 flex items-center justify-center bg-teal-500 bg-opacity-5 rounded-2xl transition-all duration-550">
                 <StackIcon name={tech.name} className="w-50 h-50" />
               </div>
-              <span>{tech.label}</span>
+              <span className='text-3xl font-bold'>{tech.label}</span>
             </div>
           ))}
         </div>
       </div>
+      
 
       {/* Main Content */}
       <div className="relative z-20 max-w-5xl w-full">
-        <div className="text-center mb-20">
-          <h1 className="text-5xl md:text-5xl font-semibold tracking-tight text-slate-900 mb-4">
+        <div className="text-center mb-5">
+          <h1 className="text-5xl md:text-5xl font-semibold tracking-tight text-slate-900 mb-20">
             Mon Expertise
           </h1>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto">
